@@ -119,7 +119,7 @@ const HomePage = (props: Props) => {
       runPrediction();
     }, 100);
     return () => clearInterval(intervel);
-  }, [webcanRef.current, model, mirrored, autoRecord]);
+  }, [webcanRef.current, model, mirrored, autoRecord, runPrediction]);
 
   return (
     <div className="flex h-screen">
